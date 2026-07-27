@@ -185,8 +185,12 @@ extern "C" {
 #define ZONE_TYPE_SVCB (64u)
 /** Service binding @rfc{9460} */
 #define ZONE_TYPE_HTTPS (65u)
-/** Endpoint discovery for delegation synchronization @draft{ietf, dnsop-generalized-notify} */
+/** Endpoint discovery for delegation synchronization @rfc{9859]} */
 #define ZONE_TYPE_DSYNC (66u)
+/** Hierarchical Host Identity Tag @rfc{9886} */
+#define ZONE_TYPE_HHIT (67u)
+/** UAS Broadcast Remote Identification @rfc{9886} */
+#define ZONE_TYPE_BRID (68u)
 /** Sender Policy Framework @rfc{7208} */
 #define ZONE_TYPE_SPF (99u)
 /** Node Identifier @rfc{6742} */
@@ -255,6 +259,12 @@ extern "C" {
 #define ZONE_SVC_PARAM_KEY_OHTTP (8u)
 /** Supported groups in TLS @draft{ietf, tls-key-share-prediction} */
 #define ZONE_SVC_PARAM_KEY_TLS_SUPPORTED_GROUPS (9u)
+/** DNS over CoAP resource path @rfc{9953} */
+#define ZONE_SVC_PARAM_KEY_DOCPATH (10u)
+/** PvD configuration is available at the well-known path @draft{ietf, intarea-proxy-config} */
+#define ZONE_SVC_PARAM_KEY_PVD (11u)
+/** Per-transport operator confidence in serving the nameserver's query load over that transport, as a percentage @draft{johani, dnsop-svcb-oots} */
+#define ZONE_SVC_PARAM_KEY_OOTS (12u)
 /** Reserved ("invalid key") @rfc{9460} */
 #define ZONE_SVC_PARAM_KEY_INVALID_KEY (65535u)
 /** @} */
